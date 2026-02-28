@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
-[![ROS2](https://img.shields.io/badge/ROS2-Humble/Iron-blue)](https://docs.ros.org/)
+[![ROS2](https://img.shields.io/badge/ROS2-jazzy)](https://docs.ros.org/)
 
 ## Why This Toolkit?
 
@@ -55,3 +55,4 @@ source venv/bin/activate
 
 # Install the core package
 pip install -e platform/rv_core
+
