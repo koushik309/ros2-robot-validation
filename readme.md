@@ -3,8 +3,8 @@
 **Framework for repeatable validation tests on ROS2 robots (simulation + real hardware) with auditable reports.**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
-[![ROS2](https://img.shields.io/badge/ROS2-jazzy)](https://docs.ros.org/)
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/)
+[![ROS2](https://img.shields.io/badge/ROS2-Humble/Iron/Jazzy-blue)](https://docs.ros.org/)
 
 ## Why This Toolkit?
 
@@ -39,7 +39,8 @@ Robotics development needs confidence that changes don’t break existing behavi
 ## Quick Start (Simulation)
 
 ### Prerequisites
-- ROS2 Humble or Iron (with `ros2_control`, `gazebo`)
+- ROS 2 **Jazzy**, Humble, or Iron (with `ros2_control`, `gazebo`)
+  *Note: Jazzy is an older, but still supported, LTS distribution.*
 - Python 3.8+ with `pip`
 
 ### Installation
@@ -55,4 +56,5 @@ source venv/bin/activate
 
 # Install the core package
 pip install -e platform/rv_core
+
 
