@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rv_core"
+version = "0.1.0"
+description = "Core library for ROS2 Robot Validation Toolkit"
+authors = [
+    {name = "Your Name", email = "you@example.com"}
+]
+dependencies = [
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "click>=8.0"
+]
+requires-python = ">=3.8"
+
+[project.entry-points.console_scripts]
+rv = "rv_core.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rv_core*"]

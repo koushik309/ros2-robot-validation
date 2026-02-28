@@ -1,0 +1,19 @@
+run:
+  mode: sim
+  duration_s: 30
+robot:
+  name: demo_arm
+  joints:
+    - joint1
+    - joint2
+    - joint3
+    - joint4
+    - joint5
+    - joint6
+tests:
+  - id: motion.repeatability
+    params:
+      waypoint: [0.2, 0.1, 0.3, 0, 1.57, 0]
+      repeats: 5
+    thresholds:
+      position_rmse_m: 0.005
