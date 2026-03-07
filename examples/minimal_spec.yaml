@@ -2,14 +2,17 @@ run:
   mode: sim
   duration_s: 30
 robot:
-  name: demo_arm
+  name: rrbot
   joints:
     - joint1
     - joint2
-    - joint3
-    - joint4
-    - joint5
-    - joint6
+telemetry:
+  record_rosbag: true
+  topics:
+    - /joint_states
+    - /tf
+    - /tf_static
+    - /diagnostics
 tests:
   - id: motion.repeatability
     params:

@@ -11,6 +11,10 @@ class RobotConfig(BaseModel):
     urdf: Optional[str] = None
     joints: List[str] = []
 
+class TelemetryConfig(BaseModel):
+    record_rosbag: bool = False
+    topics: List[str] = []
+
 class TestItem(BaseModel):
     id: str
     params: dict[str, Any] = {}
@@ -19,6 +23,7 @@ class TestItem(BaseModel):
 class TestSpec(BaseModel):
     run: RunConfig
     robot: RobotConfig
+    telemetry: Optional[TelemetryConfig] = None
     tests: List[TestItem] = []
 
     @classmethod
